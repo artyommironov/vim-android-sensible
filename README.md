@@ -18,6 +18,6 @@ Vim plugin for Gradle based Android projects
 
 # Features
 
--Automatically detects if file belongs to Gradle based project
--Sets custom compiler
--Sets errorformat for java and kotlin errors
+ - Automatically detects if file belongs to Gradle based project
+ - Sets custom compiler
+ - Sets errorformat for java and kotlin errors
