@@ -1,1 +1,3 @@
-compiler gradle
+if gradle#isGradleProject()
+    compiler gradle
+endif

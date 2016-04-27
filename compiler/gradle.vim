@@ -6,5 +6,6 @@ let g:current_compiler = 'gradle'
 exec 'CompilerSet makeprg=./gradlew\ --quiet\ --console=plain\ -b\ ' . gradle#findGradleFile() . '\ install$*Debug'
 CompilerSet errorformat=
     \%t:%f:\ (%l\\,\ %c):\ %m,
+    \%f:%l:%c-%*\\d:%m,
     \%E%f:%l:\ %m,%-Z%p^,%-C%.%#,
     \%-G%.%#
