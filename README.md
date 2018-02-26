@@ -18,7 +18,7 @@ pathogen
 # Usage
 
 ```
-:make [flavor]
+:make installDebug
 ```
 
 # Features
