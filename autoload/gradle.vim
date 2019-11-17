@@ -6,6 +6,9 @@ function! gradle#findGradleFile()
     endif
     let l:file = findfile("build.gradle", l:path . ";$HOME")
     if len(l:file) == 0
+        let l:file = findfile('build.gradle.kts', l:path . ';$HOME')
+    endif
+    if len(l:file) == 0
         return ""
     endif
     return copy(fnamemodify(l:file, ":p"))
