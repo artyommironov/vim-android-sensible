@@ -3,8 +3,10 @@ if exists('g:current_compiler')
 endif
 
 let g:current_compiler = 'gradle'
-exec 'CompilerSet makeprg=./gradlew\ --no-daemon\ --console=plain\ -b\ ' . gradle#findGradleFile()
+let g:gradle_init_file = expand('<sfile>:p:h:h') . '/gradle/init.gradle.kts'
+exec 'CompilerSet makeprg=./gradlew\ --no-daemon\ --console=plain\ -I\ ' . g:gradle_init_file . '\ -b\ ' . gradle#findGradleFile()
 CompilerSet errorformat=
+    \%f:%l:\ %tarn:\ %m,
     \%f:%l:%c:\ %m,
     \%f:%l:%c:\ %t%*[^:]:\ %m,
     \%f:%l:%c-%*\\d:\ %m,
