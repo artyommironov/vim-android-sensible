@@ -4,13 +4,13 @@ Minimal vim plugin for Android projects
 # Installation
 Vim 8 built-in package manager
 ```
-git clone https://github.com/kazufukurou/vim-android-sensible.vim ~/.vim/pack/plugins/start/vim-android-sensible.vim
+git clone https://github.com/artyommironov/vim-android-sensible.vim ~/.vim/pack/plugins/start/vim-android-sensible.vim
 ```
 NeoBundle/Vundle/vim-plug
 ```
-NeoBundle 'kazufukurou/vim-android-sensible'
-Plugin 'kazufukurou/vim-android-sensible'
-Plug 'kazufukurou/vim-android-sensible'
+NeoBundle 'artyommironov/vim-android-sensible'
+Plugin 'artyommironov/vim-android-sensible'
+Plug 'artyommironov/vim-android-sensible'
 ```
 
 # Usage
