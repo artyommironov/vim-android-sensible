@@ -1,4 +1,4 @@
 if gradle#isGradleProject()
-    compiler gradle
+  compiler gradle
 endif
 
